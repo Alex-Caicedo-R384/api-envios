@@ -1,0 +1,6 @@
+flask
+flask-cors
+flask-swagger-ui
+SQLAlchemy
+psycopg2-binary
+flask_sqlalchemy

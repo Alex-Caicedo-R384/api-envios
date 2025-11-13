@@ -1,0 +1,151 @@
+{
+  "info": {
+    "name": "app_envios",
+    "_postman_id": "2f8bcb5f-c987-4ce0-88fe-75f16474e1bc",
+    "description": "Colección oficial de pruebas para el Taller 02 – API REST de Envíos implementada en Flask + PostgreSQL + Docker.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["health"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Envíos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/envios",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["envios"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear Envío - Nada Haro",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"destinatario\": \"Nada Haro\",\n  \"direccion\": \"Quito, Ecuador\",\n  \"estado\": \"Registrado\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/envios",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["envios"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear Envío - Wilson Lozada",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"destinatario\": \"Wilson Lozada\",\n  \"direccion\": \"Quito, Ecuador\",\n  \"estado\": \"En tránsito\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/envios",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["envios"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear Envío - Ismael Corrales",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"destinatario\": \"Ismael Corrales\",\n  \"direccion\": \"Beijing, China\",\n  \"estado\": \"Enviado\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/envios",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["envios"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear Envío - Gustavo Caicedo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"destinatario\": \"Gustavo Caicedo\",\n  \"direccion\": \"Tulcán, Carchi, Ecuador\",\n  \"estado\": \"En tránsito\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/envios",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["envios"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Obtener Envío por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/envios/{{id}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["envios", "{{id}}"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
